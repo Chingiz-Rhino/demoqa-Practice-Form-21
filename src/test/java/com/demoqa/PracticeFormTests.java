@@ -24,7 +24,7 @@ public class PracticeFormTests {
         $("#firstName").setValue("Askarov");
         $("#lastName").setValue("Chingiz");
        // $("#userEmail").setValue("chingiz-askarov@list.ru");
-        $("#genterWrapper").$(byText("gender")).click();
+        $("#genterWrapper").$(byText("Male")).click();
         $("#userNumber").setValue("9650490205");
         //$("#dateOfBirthInput").setValue("20 Nov 1995");
        // $("#subjectsInput").setValue("Mother Russia");
