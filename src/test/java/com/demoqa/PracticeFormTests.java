@@ -22,19 +22,20 @@ public class PracticeFormTests {
 
 
         $("#firstName").setValue("Askarov");
-        //$("#lastName").setValue("Chingiz");
+        $("#lastName").setValue("Chingiz");
        // $("#userEmail").setValue("chingiz-askarov@list.ru");
-       // $("#genterWrapper").$(byText("gender")).click();
-       // $("#userNumber").setValue("9650490205");
-       // $("#dateOfBirthInput").setValue("20 Nov 1995");
+        $("#genterWrapper").$(byText("gender")).click();
+        $("#userNumber").setValue("9650490205");
+        //$("#dateOfBirthInput").setValue("20 Nov 1995");
        // $("#subjectsInput").setValue("Mother Russia");
+        $("#submit").click();
 
-        $("#firstName").shouldHave(text("Askarov"));
-        //$("#lastName").shouldHave(text("Chingiz"));
-        // $("userEmail").shouldHave(text("chingiz-askarov@list.ru"));
-        // $("genterWrapper").shouldHave(text("Male"));
-        // $("userNumber").shouldHave(text("9650490205"));
-        // $("dateOfBirthInput").shouldHave(text("20 Nov 1995"));
-        // $("subjectsInput").shouldHave(text("Mother Russia"));
+        $(".modal-body").shouldHave(text("Askarov"));
+        $(".modal-body").shouldHave(text("Chingiz"));
+        $(".modal-body").shouldHave(text("chingiz-askarov@list.ru"));
+        $(".modal-body").shouldHave(text("Male"));
+        $(".modal-body").shouldHave(text("9650490205"));
+        $(".modal-body").shouldHave(text("20 Nov 1995"));
+        $(".modal-body").shouldHave(text("Mother Russia"));
     }
 }
