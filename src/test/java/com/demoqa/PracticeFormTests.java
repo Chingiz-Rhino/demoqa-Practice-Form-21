@@ -15,13 +15,14 @@ import static com.codeborne.selenide.Selenide.open;
 public class PracticeFormTests {
 
     @BeforeAll
-    static void beforeAll(){
+    static void beforeAll() {
         Configuration.baseUrl = "https://demoqa.com";
-        Configuration.pageLoadStrategy="eager";
+        Configuration.pageLoadStrategy = "eager";
         Configuration.browserSize = "1980x1200";
     }
+
     @Test
-    void FillFormTest(){
+    void FillFormTest() {
 
 
         open("/automation-practice-form");
