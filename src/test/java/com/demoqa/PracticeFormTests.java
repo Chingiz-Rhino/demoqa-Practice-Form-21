@@ -22,7 +22,7 @@ public class PracticeFormTests {
     }
 
     @Test
-    void FillFormTest() {
+    void fillFormTest() {
 
 
         open("/automation-practice-form");
@@ -42,7 +42,8 @@ public class PracticeFormTests {
         $("#subjectsInput").setValue("Computer Science").pressEnter();
         $("#hobbiesWrapper").$(byText("Sports")).click();
         $("#currentAddress").setValue("Haryana Karnal");
-        $("#uploadPicture").uploadFile(new File("src/test/resources/flag.jpg"));
+        $("#uploadPicture").uploadFromClasspath("flag.jpg");
+       // $("#uploadPicture").uploadFile(new File("src/test/resources/flag.jpg"));
         $("#stateCity-wrapper").$(byText("Select State")).click();
         $("#react-select-3-option-2").click();
         $("#stateCity-wrapper").$(byText("Select City")).click();
