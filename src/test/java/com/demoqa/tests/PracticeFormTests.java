@@ -1,15 +1,10 @@
 package com.demoqa.tests;
 
-import com.codeborne.selenide.Selenide;
-import com.demoqa.pages.CalendarComponent;
+
 import com.demoqa.pages.RegistrationPage;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Condition.appear;
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+
 
 public class PracticeFormTests extends TestBase {
 
@@ -34,10 +29,6 @@ public class PracticeFormTests extends TestBase {
                 .clickOnCity()
                 .selectUserCity("Karnal")
                 .clickOnSubmit();
-
-
-
-       // $("#example-modal-sizes-title-lg").shouldHave((text("Thanks for submitting the form")));
 
         registrationPage
                 .checkTable()
