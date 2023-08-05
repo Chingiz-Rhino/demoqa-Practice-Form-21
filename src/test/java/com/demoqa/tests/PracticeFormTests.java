@@ -26,22 +26,23 @@ public class PracticeFormTests extends TestBase {
                 .setUserPhoneNumber("9650490205")
                 .setBirthDate("20","November", "1995")
                 .setUserSubjects("Computer Science")
-                .setHobbies("Sports");
+                .setHobbies("Sports")
+                .setUserPicture("flag.jpg")
+                .setUserAddress("Haryana Karnal")
+                .clickOnState()
+                .selectUserState("Haryana")
+                .clickOnCity()
+                .selectUserCity("Karnal")
+                .clickOnSubmit();
 
-        $("#currentAddress").setValue("Haryana Karnal");
-        $("#uploadPicture").uploadFromClasspath("flag.jpg");
-        // $("#uploadPicture").uploadFile(new File("src/test/resources/flag.jpg"));
-        $("#stateCity-wrapper").$(byText("Select State")).click();
-        $("#react-select-3-option-2").click();
-        $("#stateCity-wrapper").$(byText("Select City")).click();
-        $("#react-select-4-option-0").click();
 
-        $("#submit").click();
 
-        $(".modal-dialog").should(appear);
-        $("#example-modal-sizes-title-lg").shouldHave((text("Thanks for submitting the form")));
+       // $("#example-modal-sizes-title-lg").shouldHave((text("Thanks for submitting the form")));
 
-        registrationPage.checkResult("Chingiz Askarov")
+        registrationPage
+                .checkTable()
+                .checkTableText()
+                .checkResult("Chingiz Askarov")
                 .checkResult("chingiz-askarov@list.ru")
                 .checkResult("Male")
                 .checkResult("9650490205")
