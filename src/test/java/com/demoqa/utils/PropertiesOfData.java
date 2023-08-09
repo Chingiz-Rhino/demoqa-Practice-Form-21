@@ -8,15 +8,18 @@ import java.util.Locale;
 
 public class PropertiesOfData {
     static Faker faker = new Faker(Locale.ENGLISH);
-
-
     public static String
-            firstNameFakeValue = getFirstName(),
-            lastNameFakeValue = getLastName(),
-            emailFakeValue = getEmail(),
-            genderFakeValue = getGender(),
-            phoneNumberFakeValue = getPhoneNumber(),
-            dayOfBirthFakeValue = getDayOfBirth(),
-            monthOfBirthFakeValue = getMonthOfBirth(),
-            yearOfBirthFakeValue = getYearOfBirth();
+            firstNameFakeValue = getRanFirstName(),
+            lastNameFakeValue = getRanLastName(),
+            emailFakeValue = getRanEmail(),
+            genderFakeValue = getRanGender(),
+            phoneNumberFakeValue = getRanPhoneNumber(),
+            dayOfBirthFakeValue = getRanDayOfBirth(),
+            monthOfBirthFakeValue = getRanMonthOfBirth(),
+            yearOfBirthFakeValue = getRanYearOfBirth(),
+            subjectFakeValue = getRanSubject(),
+            hobbyFakeValue = getRanHobby(),
+            addressFakeValue = getRanAddress(),
+            stateFakeValue = getRanState(),
+            cityFakeValue = getRanCity(stateFakeValue);
 }

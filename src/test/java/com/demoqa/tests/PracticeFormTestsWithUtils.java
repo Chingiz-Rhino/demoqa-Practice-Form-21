@@ -3,7 +3,6 @@ package com.demoqa.tests;
 
 import com.demoqa.pages.RegistrationPage;
 import org.junit.jupiter.api.Test;
-
 import static com.demoqa.utils.PropertiesOfData.*;
 
 
@@ -22,14 +21,14 @@ public class PracticeFormTestsWithUtils extends TestBase {
                 .setGender(genderFakeValue)
                 .setUserPhoneNumber(phoneNumberFakeValue)
                 .setBirthDate(dayOfBirthFakeValue, monthOfBirthFakeValue, yearOfBirthFakeValue)
-                .setUserSubjects("Computer Science")
-                .setHobbies("Sports")
+                .setUserSubjects(subjectFakeValue)
+                .setHobbies(hobbyFakeValue)
                 .setUserPicture("flag.jpg")
-                .setUserAddress("Haryana Karnal")
+                .setUserAddress(addressFakeValue)
                 .clickOnState()
-                .selectUserState("Haryana")
+                .selectUserState(stateFakeValue)
                 .clickOnCity()
-                .selectUserCity("Karnal")
+                .selectUserCity(cityFakeValue)
                 .clickOnSubmit();
 
         registrationPage
@@ -41,10 +40,10 @@ public class PracticeFormTestsWithUtils extends TestBase {
                 .checkResult(phoneNumberFakeValue)
                 //"20 November,1995"
                 .checkResult(dayOfBirthFakeValue + " "+monthOfBirthFakeValue + ","+ yearOfBirthFakeValue)
-                .checkResult("Computer Science")
-                .checkResult("Sports")
+                .checkResult(subjectFakeValue)
+                .checkResult(hobbyFakeValue)
                 .checkResult("flag.jpg")
-                .checkResult("Haryana Karnal");
+                .checkResult(stateFakeValue+ " " +cityFakeValue);
     }
 
 }
