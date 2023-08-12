@@ -23,7 +23,7 @@ public class PracticeFormTestsWithUtils extends TestBase {
                 .setBirthDate(dayOfBirthFakeValue, monthOfBirthFakeValue, yearOfBirthFakeValue)
                 .setUserSubjects(subjectFakeValue)
                 .setHobbies(hobbyFakeValue)
-                .setUserPicture("flag.jpg")
+                .setUserPicture(pictureFakeValue)
                 .setUserAddress(addressFakeValue)
                 .clickOnState()
                 .selectUserState(stateFakeValue)

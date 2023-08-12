@@ -19,6 +19,7 @@ public class PropertiesOfData {
             yearOfBirthFakeValue = getRanYearOfBirth(),
             subjectFakeValue = getRanSubject(),
             hobbyFakeValue = getRanHobby(),
+            pictureFakeValue = "flag.jpg",
             addressFakeValue = getRanAddress(),
             stateFakeValue = getRanState(),
             cityFakeValue = getRanCity(stateFakeValue);
