@@ -41,7 +41,7 @@ test {
     useJUnitPlatform()
 }
 
-task pracrice_form(type: Test ){
+task practice_form(type: Test ){
     useJUnitPlatform{
         includeTags("PracticeForm")
     }
