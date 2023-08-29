@@ -2,6 +2,8 @@ package com.demoqa.tests;
 
 
 import com.demoqa.pages.RegistrationPage;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import static com.demoqa.utils.PropertiesOfData.*;
 
@@ -9,7 +11,8 @@ import static com.demoqa.utils.PropertiesOfData.*;
 public class PracticeFormTestsWithUtils extends TestBase {
 
     RegistrationPage registrationPage = new RegistrationPage();
-
+    @Tag("PracticeForm")
+    @DisplayName("Testing Practice Form with java faker")
     @Test
     void fillFormTest() {
         registrationPage

@@ -2,6 +2,8 @@ package com.demoqa.tests;
 
 
 import com.demoqa.pages.RegistrationPage;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 
@@ -9,6 +11,8 @@ public class PracticeFormTests extends TestBase {
 
     RegistrationPage registrationPage = new RegistrationPage();
 
+    @Tag("PracticeForm")
+    @DisplayName("Testing Practice Form with hardcode")
     @Test
     void fillFormTest() {
         registrationPage
