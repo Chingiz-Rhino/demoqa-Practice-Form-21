@@ -32,7 +32,7 @@ public class RegistrationPage {
 
     //Open Web Site
     public RegistrationPage openWebSite() {
-        open("https://demoqa.com/automation-practice-form");
+        open("/automation-practice-form");
 
         return this;
     }
