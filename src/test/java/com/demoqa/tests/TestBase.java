@@ -19,27 +19,7 @@ public class TestBase {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.pageLoadStrategy = "eager";
         Configuration.browserSize = "1980x1200";
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-        Configuration.holdBrowserOpen = true;
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("selenoid:options", Map.of(
-                "enableVNS", true,
-                "enableVideo", true
-        ));
-        Configuration.browserCapabilities = capabilities;
-    }
-    @BeforeEach
-    void addListener(){
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+
     }
 
-    @AfterEach
-    void addAttachment(){
-        Attach.screenshotAs("Last screenshot");
-        Attach.pageSource();
-        Attach.browserConsoleLogs();
-        Attach.addVideo();
-
-        closeWebDriver();
-    }
 }
