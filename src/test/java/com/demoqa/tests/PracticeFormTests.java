@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.logevents.SelenideLogger.step;
 
 
-public class PracticeFormTests extends TestBase {
+public class PracticeFormTests extends RemoteTestBase {
 
     RegistrationPage registrationPage = new RegistrationPage();
 

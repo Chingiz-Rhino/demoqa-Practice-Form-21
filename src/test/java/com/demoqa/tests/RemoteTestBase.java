@@ -20,7 +20,7 @@ public class RemoteTestBase {
         Configuration.pageLoadStrategy = "eager";
 
         Configuration.browserSize = System.getProperty("browserSize");
-        Configuration.browser = System.getProperty("browser");
+        Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("browserVersion");
 
         Configuration.remote = System.getProperty("remoteUrl", "https://user1:1234@selenoid.autotests.cloud/wd/hub");

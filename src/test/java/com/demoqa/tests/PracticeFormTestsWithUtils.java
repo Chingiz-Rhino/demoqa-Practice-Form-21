@@ -10,7 +10,7 @@ import static com.codeborne.selenide.logevents.SelenideLogger.step;
 import static com.demoqa.utils.PropertiesOfData.*;
 
 
-public class PracticeFormTestsWithUtils extends TestBase {
+public class PracticeFormTestsWithUtils extends RemoteTestBase {
 
     RegistrationPage registrationPage = new RegistrationPage();
 
