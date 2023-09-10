@@ -4,7 +4,7 @@ import com.demoqa.enums.*;
 import com.demoqa.enums.cities.HaryanaCitiesEnum;
 import com.demoqa.enums.cities.NCRCitiesEnum;
 import com.demoqa.enums.cities.RajasthanCitiesEnum;
-import com.demoqa.enums.cities.UttarParadeshCitiesEnum;
+import com.demoqa.enums.cities.UttarPradeshCitiesEnum;
 import java.util.concurrent.ThreadLocalRandom;
 import static com.demoqa.utils.PropertiesOfData.faker;
 
@@ -80,8 +80,8 @@ public class MethodsOfData {
             return getRandomEnum(NCRCitiesEnum.class).getCities();
         } else if (state.equals("Rajasthan")) {
             return getRandomEnum(RajasthanCitiesEnum.class).getCities();
-        } else if (state.equals("Uttar Paradesh")) {
-            return getRandomEnum(UttarParadeshCitiesEnum.class).getCities();
+        } else if (state.equals("Uttar Pradesh")) {
+            return getRandomEnum(UttarPradeshCitiesEnum.class).getCities();
         }
         return null;
     }
