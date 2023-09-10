@@ -25,7 +25,7 @@ public class RemoteTestBase {
 
         Configuration.remote = System.getProperty("remoteUrl");
 
-        Configuration.holdBrowserOpen = true;
+        Configuration.holdBrowserOpen = false;
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.of(
                 "enableVNS", true,
